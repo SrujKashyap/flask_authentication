@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ambient-light top"></div>
+    <div class="ambient-light bottom"></div>
+    
+    <div class="container">
+        <h1>Welcome to Splittr</h1>
+        <h2>Your one-stop solution for all your payment Splits!</h2>
+        <div class="action-buttons">
+            <a href="{{ url_for('login') }}" class="btn">Login</a>
+            <a href="{{ url_for('register') }}" class="btn" style="margin-left: 1rem;">Register</a>
+        </div>
+    </div>
+</body>
+</html>

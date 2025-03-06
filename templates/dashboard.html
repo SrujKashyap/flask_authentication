@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ambient-light top"></div>
+    <div class="ambient-light bottom"></div>
+    
+    <div class="container">
+        <nav class="dashboard-nav">
+            <h2>Welcome, {{ current_user.username }}!</h2>
+            <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+        </nav>
+        
+        <div class="dashboard-content">
+            <h3>Your Dashboard</h3>
+            <!-- Add your dashboard content here -->
+        </div>
+    </div>
+</body>
+</html>
