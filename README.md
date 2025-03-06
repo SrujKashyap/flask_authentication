@@ -1,12 +1,1 @@
-project-flow
-│
-├── app.py                
-├── templates/
-│   ├── base.html          
-│   ├── login.html         
-│   └── register.html      
-├── static/
-│   └── css/
-│       └── style.css      
-├── requirements.txt       
-└── README.md              
+user "authentication" using flask as the web frame work and HTML,CSS for styling.
